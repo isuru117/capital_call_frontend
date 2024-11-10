@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Sidebar from './components/Sidebar.vue'
 </script>
 
@@ -51,6 +51,7 @@ button {
   display: flex;
   height: 100vh;
   overflow: hidden;
+
   main {
     flex: 1 1 0;
     padding: 2rem;

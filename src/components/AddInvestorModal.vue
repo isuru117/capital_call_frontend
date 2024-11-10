@@ -13,26 +13,14 @@
         </label>
         <label>
           IBAN:
-          <input
-            type="text"
-            v-model="newInvestor.iban"
-            @input="formatAndValidateIBAN"
-            required
-            maxlength="34"
-            placeholder="Enter IBAN"
-          />
+          <input type="text" v-model="newInvestor.iban" @input="formatAndValidateIBAN" required maxlength="34"
+            placeholder="Enter IBAN" />
         </label>
         <label>
           Total Investment:
           <div class="currency-input">
-            <input
-              type="number"
-              v-model="newInvestor.total_investment"
-              required
-              placeholder="Enter investment amount"
-              step="0.01"
-              min="0"
-            />
+            <input type="number" v-model="newInvestor.total_investment" required placeholder="Enter investment amount"
+              step="0.01" min="0" />
             <span class="currency-symbol">EUR</span>
           </div>
         </label>
@@ -51,7 +39,8 @@
 
 <script lang="ts">
 import { formatIBAN, formatAmount } from '@/utils/DataUtils'
-import { defineComponent, ref, PropType } from 'vue'
+import { defineComponent, ref, } from 'vue'
+import type { PropType } from 'vue'
 
 export default defineComponent({
   name: 'AddInvestorModal',
@@ -208,7 +197,7 @@ button {
 }
 
 .save-btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 @media (max-width: 768px) {

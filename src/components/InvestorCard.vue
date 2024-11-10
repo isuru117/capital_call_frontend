@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import type { Investor } from '@/types/Investor'
-import { PropType } from 'vue'
+import type { PropType } from 'vue'
 import { formatIBANstring } from '@/utils/DataUtils'
 
 export default {
