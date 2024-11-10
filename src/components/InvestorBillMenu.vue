@@ -20,9 +20,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref } from 'vue'
+import { defineComponent, ref } from 'vue'
+import type { PropType } from 'vue'
 import BillCard from '@/components/BillCard.vue'
-import { Bill } from '@/types/Bill'
+import type { Bill } from '@/types/Bill'
 
 export default defineComponent({
     name: 'InvestorBillMenu',
@@ -44,7 +45,7 @@ export default defineComponent({
         },
     },
     emits: ['openModal', 'submitSelectedBills', 'toggleBillSelection'],
-    setup(_, { emit, props }) {
+    setup(_, { emit }) {
         const isSectionCollapsed = ref(false)
 
         function toggleSection() {

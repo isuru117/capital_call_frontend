@@ -30,9 +30,10 @@
 
 
 <script lang="ts">
-import { defineComponent, ref, watch, PropType } from 'vue'
-import { StatusChoices } from '@/types/StatusChoices'
+import { defineComponent, ref, watch } from 'vue'
+import type { PropType } from 'vue'
 import type { CapitalCall } from '@/types/CapitalCall'
+import { StatusChoices } from '@/types/StatusChoices'
 
 export default defineComponent({
     name: 'EditCapitalCallModal',

@@ -22,8 +22,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, PropType, onMounted } from 'vue'
-import { Investor } from '@/types/Investor'
+import { defineComponent, ref, onMounted } from 'vue'
+import type { PropType } from 'vue'
+import type { Investor } from '@/types/Investor'
 import { BillType } from '@/types/BillType'
 
 export default defineComponent({

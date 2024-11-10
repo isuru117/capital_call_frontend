@@ -26,15 +26,27 @@
     </aside>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-import logoURL from '@/assets/logo.svg'
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
+import logoURL from '@/assets/logo.svg';
 
-const is_expanded = ref(true)
+export default defineComponent({
+    name: 'Sidebar',
 
-const ToggleMenu = () => {
-    is_expanded.value = !is_expanded.value
-}
+    setup() {
+        const is_expanded = ref(true);
+
+        const ToggleMenu = () => {
+            is_expanded.value = !is_expanded.value;
+        };
+
+        return {
+            is_expanded,
+            ToggleMenu,
+            logoURL
+        };
+    }
+});
 </script>
 
 <style lang="scss" scoped>

@@ -14,7 +14,7 @@
 
 <script lang="ts">
 import type { Bill } from '@/types/Bill';
-import { PropType } from 'vue';
+import type { PropType } from 'vue';
 
 export default {
   name: 'BillCard',
@@ -57,6 +57,7 @@ export default {
   height: 20px;
   cursor: pointer;
 }
+
 .card-detail h2 {
   font-size: 1.1rem;
   margin: 0 0 0.5rem 0;

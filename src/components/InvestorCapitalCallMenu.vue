@@ -15,7 +15,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref } from 'vue'
+import { defineComponent, ref } from 'vue'
+import type { PropType } from 'vue'
 
 import CapitalCallCard from './CapitalCallCard.vue'
 import type { CapitalCall } from '@/types/CapitalCall'

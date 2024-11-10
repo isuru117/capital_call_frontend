@@ -29,7 +29,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
+import { defineComponent } from 'vue'
+import type { PropType } from 'vue'
 import type { CapitalCall } from '@/types/CapitalCall'
 import logoURL from '@/assets/logo.svg'
 import { formatIBANstring } from '@/utils/DataUtils';
