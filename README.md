@@ -1,25 +1,32 @@
 # Capital Call Application
-A simple frontend for managing Capital Call data 
 
-# Demo
-### You can view a live demo at : https://ccapp.isuruedirisinghe.com/
-[Video-Demo-Capital-Call-App.webm](https://github.com/user-attachments/assets/f75d9e59-390d-437f-a9a6-f3b6077eb878)
+A simple, user-friendly frontend interface for managing Capital Call data.
 
-# Requirements
-- node 16 or later
-- vue 3.5 or later
-- vite 5.4 or later
+## Demo
+#### View a live demo at : [Capital Call Frontend Demo](https://ccapp.isuruedirisinghe.com/)
 
-# Setup
-``` bash
-# install dependencies
-> npm i
-# serve app
-> npm run dev
+[Video-Demo-Capital-Call-App.webm](https://github.com/user-attachments/assets/39c93ccc-1f43-4329-bb0f-ac1463509f31)
+
+## Requirements
+- **Node**: Version 16 or later
+- **Vue**: Version 3.5 or later
+- **Vite**: Version 5.4 or later
+
+
+## Setup
+
+To get started, follow these steps:
+
+```bash
+# Install dependencies
+npm i
+
+# Serve the application
+npm run dev
 ```
 
-# Assumptions
-- An inital set of bills of each type generated for Investor upon registration if applicable. Further bills can be added from InvestorDetails view.
-- Bill fees calculated automatically when adding new bills based on investment amount of the Investor.
-- Allowed grouping of bills belonging to Investor without restriction.
-- Only the status or the due date is allowed to be modified for a generated Capital Call.
+## Application Features & Assumptions
+- **Initial Bill Generation**: A predefined set of bills for each type is created for an Investor upon registration, if applicable. Additional bills can be added through the Investor Details view.
+- **Automated Fee Calculation**: Bill fees are calculated automatically based on the Investor's investment amount when new bills are added.
+- **Flexible Bill Grouping**: Bills associated with an Investor can be grouped without restrictions.
+- **Capital Call Modifications**: Only the status or due date can be modified for a generated Capital Call.
